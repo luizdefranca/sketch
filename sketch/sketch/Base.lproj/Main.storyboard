@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="sketch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen" translatesAutoresizingMaskIntoConstraints="NO" id="nO2-O0-CG6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzn-BK-o9D">
+                                <rect key="frame" x="71" y="179" width="277" height="54"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                <state key="normal" backgroundImage="EnterButton"/>
+                                <connections>
+                                    <segue destination="cyc-wd-tYt" kind="show" id="USE-Ec-y64"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nO2-O0-CG6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DK9-YQ-mL5"/>
+                            <constraint firstItem="nO2-O0-CG6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QsW-vX-veL"/>
+                            <constraint firstItem="nO2-O0-CG6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="TeC-74-utF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uzn-BK-o9D" secondAttribute="trailing" constant="66" id="Ul7-Ku-83a"/>
+                            <constraint firstItem="uzn-BK-o9D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="71" id="Z0X-FJ-HNw"/>
+                            <constraint firstAttribute="bottom" secondItem="nO2-O0-CG6" secondAttribute="bottom" id="ac5-53-aQg"/>
+                            <constraint firstItem="uzn-BK-o9D" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="135" id="dxz-5w-5NH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uzn-BK-o9D" secondAttribute="bottom" constant="629" id="wPB-Zr-lHu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YmB-D8-Qiy">
+            <objects>
+                <viewController id="cyc-wd-tYt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HYH-B4-KEQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen" translatesAutoresizingMaskIntoConstraints="NO" id="sy7-UP-eSS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0NE-GL-7MF">
+                                <rect key="frame" x="69" y="210" width="277" height="55"/>
+                                <state key="normal" backgroundImage="TwitterButton"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uN7-l8-rxc">
+                                <rect key="frame" x="69" y="107" width="277" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="adw-1P-bmZ"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="FacebookButton"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uN7-l8-rxc" firstAttribute="centerX" secondItem="HYH-B4-KEQ" secondAttribute="centerX" id="5mL-A3-CHF"/>
+                            <constraint firstItem="uN7-l8-rxc" firstAttribute="top" secondItem="iT2-K0-bj3" secondAttribute="top" constant="63" id="8fi-kf-Mdg"/>
+                            <constraint firstItem="uN7-l8-rxc" firstAttribute="leading" secondItem="iT2-K0-bj3" secondAttribute="leading" constant="69" id="C3k-rL-Bj6"/>
+                            <constraint firstItem="uN7-l8-rxc" firstAttribute="leading" secondItem="0NE-GL-7MF" secondAttribute="leading" id="HJM-CK-fz0"/>
+                            <constraint firstItem="uN7-l8-rxc" firstAttribute="trailing" secondItem="0NE-GL-7MF" secondAttribute="trailing" id="K3f-5F-9Ge"/>
+                            <constraint firstItem="0NE-GL-7MF" firstAttribute="top" secondItem="uN7-l8-rxc" secondAttribute="bottom" constant="49" id="VdW-Da-UlX"/>
+                            <constraint firstAttribute="bottom" secondItem="sy7-UP-eSS" secondAttribute="bottom" id="caF-6u-Knw"/>
+                            <constraint firstItem="iT2-K0-bj3" firstAttribute="bottom" secondItem="0NE-GL-7MF" secondAttribute="bottom" constant="597" id="fXZ-pG-N7o"/>
+                            <constraint firstItem="sy7-UP-eSS" firstAttribute="leading" secondItem="HYH-B4-KEQ" secondAttribute="leading" id="mNR-Kq-sDb"/>
+                            <constraint firstItem="sy7-UP-eSS" firstAttribute="top" secondItem="HYH-B4-KEQ" secondAttribute="top" id="snq-cL-Wvb"/>
+                            <constraint firstItem="uN7-l8-rxc" firstAttribute="centerX" secondItem="sy7-UP-eSS" secondAttribute="centerX" id="vUx-bI-qjL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iT2-K0-bj3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1zr-cm-MgD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1121.7391304347827" y="135.9375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="EnterButton" width="149" height="30"/>
+        <image name="FacebookButton" width="149" height="30"/>
+        <image name="Screen" width="187.5" height="333.5"/>
+        <image name="TwitterButton" width="149" height="30"/>
+    </resources>
+</document>
